@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comminity_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="暂无"
+            android:textColor="@color/text_subtitle_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="开发商" />
+
+            <TextView
+                android:id="@+id/tv_kaifashang"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="物业管理公司" />
+
+            <TextView
+                android:id="@+id/tv_wuye"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="楼盘名称" />
+
+            <TextView
+                android:id="@+id/tv_loupanmingcheng"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="均价" />
+
+            <TextView
+                android:id="@+id/tv_junjia"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="开盘时间" />
+
+            <TextView
+                android:id="@+id/tv_kaipanshijian"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="交房时间" />
+
+            <TextView
+                android:id="@+id/tv_jiaofangshijian"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="装修标准" />
+
+            <TextView
+                android:id="@+id/tv_zhuangxiubiaozhun"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="建筑类型" />
+
+            <TextView
+                android:id="@+id/tv_jianzhuleixing"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="物业类型" />
+
+            <TextView
+                android:id="@+id/tv_wuyeleixing"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="产权年限" />
+
+            <TextView
+                android:id="@+id/tv_chanquannianxian"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="建筑面积" />
+
+            <TextView
+                android:id="@+id/tv_jianzhumianji"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="占地面积" />
+
+            <TextView
+                android:id="@+id/tv_zhandimianji"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="绿化率" />
+
+            <TextView
+                android:id="@+id/tv_lvhualv"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="容积率" />
+
+            <TextView
+                android:id="@+id/tv_rongjilv"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="物业费" />
+
+            <TextView
+                android:id="@+id/tv_wuyefei"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="车位数" />
+
+            <TextView
+                android:id="@+id/tv_cheweishu"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+
+        <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+            <TextView
+                style="@style/unit_descr_tv_left"
+                android:text="户数" />
+
+            <TextView
+                android:id="@+id/tv_hushu"
+                style="@style/unit_descr_tv_right"
+                android:text="暂无" />
+        </com.toda.yjkf.view.UnitDescriptionLayout>
+    </LinearLayout>
+
+
+</ScrollView>

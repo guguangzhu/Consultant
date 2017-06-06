@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:src="@mipmap/bg_login_one"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="@dimen/text_size_big"
+        android:scaleType="fitXY"
+        android:id="@+id/tv_province" />
+
+    <TextView
+        android:textColor="@color/text_common_color"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/tv_city" />
+</LinearLayout>

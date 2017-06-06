@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/second_unit_info_margin"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.toda.yjkf.view.UnitDescriptionLayout
+        android:id="@+id/udlt_periphery_more"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/tv_periphery_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="丨"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_periphery_tip"
+            android:text="周边配套"
+            android:textColor="@color/text_subtitle_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            style="@style/unit_descr_tv_right"
+            android:text="更多参数 >" />
+    </com.toda.yjkf.view.UnitDescriptionLayout>
+
+    <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+        <TextView
+            style="@style/unit_descr_tv_left"
+            android:text="交通设施" />
+
+        <TextView
+            android:id="@+id/tv_jiaotongsheshi"
+            style="@style/unit_descr_tv_right"
+            android:text="暂无" />
+    </com.toda.yjkf.view.UnitDescriptionLayout>
+
+    <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+        <TextView
+            style="@style/unit_descr_tv_left"
+            android:text="学校" />
+
+        <TextView
+            android:id="@+id/tv_xuexiao"
+            style="@style/unit_descr_tv_right"
+            android:text="暂无" />
+    </com.toda.yjkf.view.UnitDescriptionLayout>
+
+    <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+        <TextView
+            style="@style/unit_descr_tv_left"
+            android:text="超市菜场" />
+
+        <TextView
+            android:id="@+id/tv_chaoshicaichang"
+            style="@style/unit_descr_tv_right"
+            android:text="暂无" />
+    </com.toda.yjkf.view.UnitDescriptionLayout>
+
+    <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+        <TextView
+            style="@style/unit_descr_tv_left"
+            android:text="医院药房" />
+
+        <TextView
+            android:id="@+id/tv_yiyuanyaofang"
+            style="@style/unit_descr_tv_right"
+            android:text="暂无" />
+    </com.toda.yjkf.view.UnitDescriptionLayout>
+
+    <com.toda.yjkf.view.UnitDescriptionLayout style="@style/unit_descr_layout">
+
+        <TextView
+            style="@style/unit_descr_tv_left"
+            android:text="银行" />
+
+        <TextView
+            android:id="@+id/tv_yinhang"
+            style="@style/unit_descr_tv_right"
+            android:text="暂无" />
+    </com.toda.yjkf.view.UnitDescriptionLayout>
+
+
+</LinearLayout>

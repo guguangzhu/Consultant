@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_photo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_white_btn_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding"
+            android:paddingRight="@dimen/common_horizontal_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="照片"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_white_btn_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding"
+            android:paddingRight="@dimen/common_horizontal_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="标题"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:id="@+id/ll_region"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_white_btn_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding"
+            android:paddingRight="@dimen/common_horizontal_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="区域" />
+
+            <TextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_white_btn_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding"
+            android:paddingRight="@dimen/common_horizontal_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="地址" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:id="@+id/ll_landmark"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_white_btn_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding"
+            android:paddingRight="@dimen/common_horizontal_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="地标" />
+
+            <TextView
+                android:id="@+id/tv_landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_white_btn_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding"
+            android:paddingRight="@dimen/common_horizontal_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="房源介绍"/>
+
+            <TextView
+                style="@style/text_default"
+                android:id="@+id/tv_profile"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_type"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="类别" />
+
+            <TextView
+                android:id="@+id/tv_house_type"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_bedroom"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="卧室" />
+
+            <TextView
+                android:id="@+id/tv_room_amount"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_hall"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="客厅" />
+
+            <TextView
+                android:id="@+id/tv_hall"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_kitchen"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="厨房" />
+
+            <TextView
+                android:id="@+id/tv_kitchen"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_toilet"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="厕所" />
+
+            <TextView
+                android:id="@+id/tv_toilet"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_balcony"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="阳台" />
+
+            <TextView
+                android:id="@+id/tv_balcony"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_garden"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="花园" />
+
+            <TextView
+                android:id="@+id/tv_garden"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_area"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="建筑面积" />
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_area_title" />
+            <TextView
+                android:id="@+id/tv_area_title"
+                android:text="㎡"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        '
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_inner_area"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="套内面积" />
+            <TextView
+                android:id="@+id/tv_inner_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_inner_area_title" />
+            <TextView
+                android:text="㎡"
+                android:id="@+id/tv_inner_area_title"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_floor"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="楼层" />
+
+            <TextView
+                android:id="@+id/tv_floor"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_price"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="均价" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_price_title" />
+            <TextView
+                android:text="元/㎡"
+                android:id="@+id/tv_price_title"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_total_price"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="总价" />
+            <TextView
+                android:id="@+id/tv_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_total_money_title" />
+            <TextView
+                android:text="万元/套"
+                android:id="@+id/tv_total_money_title"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_standard"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="装修标准" />
+
+            <TextView
+                android:id="@+id/tv_standard"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_period"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="产权年限" />
+
+            <TextView
+                android:id="@+id/tv_period"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_has_elevator"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="有无电梯" />
+
+            <TextView
+                android:id="@+id/tv_has_elevator"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_orientation"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="朝向" />
+
+            <TextView
+                android:id="@+id/tv_orientation"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            style="@style/unit_descr_layout"
+            android:id="@+id/ll_feature"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="房源特点" />
+
+            <TextView
+                android:id="@+id/tv_feature"
+                android:maxLength="10"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+    </LinearLayout>
+</ScrollView>

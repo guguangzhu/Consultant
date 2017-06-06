@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llt_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:text="标题"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_size_mid_x"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left|center_vertical"
+            android:text="内容"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_size_mid" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/LineHorizontalStyle"
+        android:layout_below="@id/llt_content" />
+
+    <LinearLayout
+        android:id="@+id/llt_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llt_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="取消"
+            android:textColor="@color/dialog_green"
+            android:textSize="@dimen/text_size_mid" />
+
+        <ImageView
+            android:id="@+id/line"
+            style="@style/LineVerticalStyle"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="确定"
+            android:textColor="@color/dialog_green"
+            android:textSize="@dimen/text_size_mid"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

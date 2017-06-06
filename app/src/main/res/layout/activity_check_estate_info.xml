@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_estate_info"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小区简介" />
+
+            <TextView
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:id="@+id/tv_estate_info"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_developer"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开发商" />
+
+            <TextView
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:id="@+id/tv_developer"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_manager"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:layout_width="match_parent"
+                android:text="物业管理公司" />
+
+            <TextView
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:id="@+id/tv_manager"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_estate_name"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:layout_width="wrap_content"
+                android:text="楼盘名称" />
+
+            <TextView
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:id="@+id/tv_estate_name"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_average_price"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:layout_width="wrap_content"
+                android:text="均价" />
+
+            <TextView
+                android:id="@+id/tv_average_price"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_open_date"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="开盘时间" />
+
+            <TextView
+                android:id="@+id/tv_open_date"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_give_date"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="交房时间" />
+
+            <TextView
+                android:id="@+id/tv_give_date"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_standard"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="装修标准" />
+
+            <TextView
+                android:id="@+id/tv_decorate_standard"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_build_type"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="建筑类型" />
+
+            <TextView
+                android:id="@+id/tv_construct_type"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_manager_type"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="物业类型" />
+
+            <TextView
+                android:id="@+id/tv_manager_type"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_period"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="产权年限" />
+
+            <TextView
+                android:id="@+id/tv_estate_period"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_area"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="建筑面积" />
+
+            <TextView
+                android:id="@+id/tv_estate_area"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_floor_area"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="占地面积" />
+
+            <TextView
+                android:id="@+id/tv_land_area"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_greening_rate"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="绿化率" />
+
+            <TextView
+                android:id="@+id/tv_green_ratio"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_inner_rate"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="容积率" />
+
+            <TextView
+                android:id="@+id/tv_plot_ratio"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_management_price"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="物业费" />
+
+            <TextView
+                android:id="@+id/tv_manage_fee"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_park_amount"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="车位数" />
+
+            <TextView
+                android:id="@+id/tv_park_amount"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+        <com.toda.consultant.view.UnitDescriptionLayout
+            android:id="@+id/ll_house_amount"
+            style="@style/unit_descr_layout"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/house_descr_tv_left"
+                android:text="户数" />
+
+            <TextView
+                android:id="@+id/tv_house_amount"
+                style="@style/unit_descr_tv_right" />
+        </com.toda.consultant.view.UnitDescriptionLayout>
+
+    </LinearLayout>
+</ScrollView>

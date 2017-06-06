@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toda.consultant">
+
+    <application
+        android:name=".app.BrokerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--闪屏-->
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--首页-->
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <!--登录-->
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <!--客户详情-->
+        <activity android:name=".ClientDetailActivity" android:screenOrientation="portrait"/>
+        <!--我的房源-->
+        <activity android:name=".MyHouseListActivity" android:screenOrientation="portrait"/>
+        <!--房源信息-->
+        <activity android:name=".HouseInfoActivity" android:screenOrientation="portrait"/>
+        <!--核验-->
+        <activity android:name=".CheckHouseActivity" android:screenOrientation="portrait"/>
+        <!--核验小区资料-->
+        <activity android:name=".CheckEstateInfoActivity" android:screenOrientation="portrait"/>
+        <!--核验户型资料-->
+        <activity android:name=".CheckHouseInfoActivity" android:screenOrientation="portrait"/>
+        <!--核验周边配套-->
+        <activity android:name=".CheckSurroundingActivity" android:screenOrientation="portrait"/>
+        <!--选择城市-->
+        <activity android:name=".CommonSelectCityActivity" android:screenOrientation="portrait"/>
+        <!--选择区域-->
+        <activity android:name=".ChooseRegionActivity" android:screenOrientation="portrait"/>
+        <!--添加地图标记-->
+        <activity android:name=".MarkMapActivity" android:screenOrientation="portrait"/>
+        <!--聊天-->
+        <activity android:name=".ChatActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.toda.broker"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!--高德-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f86ab25fd8473b52e168667a6d54da7c" />
+        
+        <service android:name="com.amap.api.location.APSService"/>
+        <!--公共web页面-->
+        <activity android:name=".CommonWebActivity" android:screenOrientation="portrait"/>
+        <!--小区详情-->
+        <activity android:name=".CommunityInfoActivity" android:screenOrientation="portrait"/>
+        <!--房源详情-->
+        <activity android:name=".HousingProfileActivity" android:screenOrientation="portrait"/>
+        <!--周边配套详情-->
+        <activity android:name=".PeripheryFacilityActivity" android:screenOrientation="portrait"/>
+        <!--项目位置-->
+        <activity android:name=".PositionPeripheryMapActivity" android:screenOrientation="portrait"/>
+        <!--图片查看-->
+        <activity android:name=".PhotoViewActivity" android:screenOrientation="portrait" />
+        <!--二手房详情-->
+        <activity android:name=".SecondHouseTypeActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

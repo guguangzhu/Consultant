@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_white_corner"
+    android:orientation="vertical">
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/id_flow_layout_feature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="确定"
+        android:textColor="@color/dialog_green"
+        android:textSize="@dimen/text_size_mid" />
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_logo"
+        android:layout_marginTop="10dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/bg_login_one"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_title_color"
+        android:layout_marginTop="15dp"
+        android:text="刘德华"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@mipmap/ic_male"
+        android:id="@+id/iv_sex"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_user_info"
+        android:layout_below="@+id/iv_sex"
+        android:layout_marginTop="5dp"
+        android:text="广西桂林市 33岁 未婚"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:layout_below="@id/tv_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/roomRatingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="15dp"
+        android:id="@+id/ratingbar"
+        android:rating="2"
+        android:stepSize="1"
+        android:numStars="6"
+        />
+    <LinearLayout
+        android:layout_below="@+id/ratingbar"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_house_amount"
+            android:text="房源数量：12套"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_learn_more"
+            android:text="点击查看 >>"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/link_color"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="举报违规用户"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_red"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat"
+        android:layout_above="@id/btn_report"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_blue_stroke"
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="40dp">
+        <ImageView
+            android:src="@mipmap/ic_client_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="立即跟进用户"
+            android:textColor="@color/main_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
